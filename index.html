@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Prathna Mehta - Composer & Concert Pianist</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Syne:wght@600;700;800&amp;family=Playfair+Display:ital,wght@0,600;1,400;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            charcoal: '#1E1E24',
+                            coral: '#FF6F59',
+                            'coral-dark': '#E8553E',
+                            lavender: '#8A6FE8',
+                            'lavender-soft': '#F3F0FF',
+                            sky: '#38BDF8',
+                            'sky-soft': '#F0F9FF',
+                            yellow: '#FBBF24',
+                            'yellow-soft': '#FEF9C3',
+                            offwhite: '#FAF9F6',
+                            surface: '#FFFFFF',
+                            muted: '#656370',
+                            border: '#E8E5E0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    keyframes: {
+                        eqPulse: {
+                            '0%, 100%': { height: '6px' },
+                            '50%': { height: '22px' },
+                        },
+                        floatSlow: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        }
+                    },
+                    animation: {
+                        'eq-1': 'eqPulse 1s ease-in-out infinite',
+                        'eq-2': 'eqPulse 0.7s ease-in-out infinite 0.15s',
+                        'eq-3': 'eqPulse 1.2s ease-in-out infinite 0.3s',
+                        'eq-4': 'eqPulse 0.85s ease-in-out infinite 0.1s',
+                        'eq-5': 'eqPulse 1.1s ease-in-out infinite 0.4s',
+                        'float': 'floatSlow 4s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #FAF9F6;
+                color: #1E1E24;
+            }
+        }
+
+        .soundwave-line {
+            background: repeating-linear-gradient(90deg, #FF6F59 0, #FF6F59 3px, transparent 3px, transparent 7px, #8A6FE8 7px, #8A6FE8 10px, transparent 10px, transparent 14px, #38BDF8 14px, #38BDF8 17px, transparent 17px, transparent 21px);
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-offwhite text-brand-charcoal font-sans antialiased selection:bg-brand-coral selection:text-white">
+    <!-- TOP VIBRANT ANNOUNCEMENT STRIP -->
+    <div
+        class="bg-gradient-to-r from-brand-coral via-brand-lavender to-brand-sky text-white text-xs font-bold py-2 px-4 text-center tracking-wider uppercase flex items-center justify-center gap-2 relative z-50">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-yellow animate-ping"></span>
+        <span>Spring 2025 Concert Tour &amp; Recitals Now On Sale · Paris, London, Berlin, New York</span>
+        <a class="underline hover:text-brand-yellow ml-2" href="#performances">View Dates →</a>
+    </div>
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#FAF9F6]/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Artist Logo -->
+            <a class="flex items-center gap-3 group" href="#home">
+                <div
+                    class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-coral to-brand-lavender flex items-center justify-center text-white shadow-md shadow-brand-coral/20 group-hover:scale-105 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-[24px]">music_note</span>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-brand-charcoal group-hover:text-brand-coral transition-colors">
+                        Prarthana Mehta
+                    </span>
+                    <span
+                        class="text-[11px] font-bold tracking-widest text-brand-lavender uppercase flex items-center gap-1.5">
+                    </span>
+                </div>
+            </a>
+            <!-- Desktop Nav Links -->
+            <nav
+                class="hidden lg:flex items-center gap-1 bg-white/70 border border-brand-border px-3 py-1.5 rounded-full shadow-sm">
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-charcoal hover:text-brand-coral transition-colors rounded-full"
+                    href="#home">Home</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#about">About</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#videos">Videos</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#performances">Performances</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#gallery">Gallery</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#team">Team</a>
+                <a class="px-4 py-2 text-xs font-bold tracking-wider uppercase text-brand-muted hover:text-brand-charcoal transition-colors rounded-full"
+                    href="#journey">Journey</a>
+            </nav>
+            <!-- CTA & Mobile Trigger -->
+            <div class="flex items-center gap-3">
+                <a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-coral hover:bg-brand-coral-dark text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-coral/25 hover:shadow-brand-coral/40 hover:-translate-y-0.5 transition-all duration-200"
+                    href="#contact">
+                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>Book a Performance</span>
+                </a>
+                <button
+                    class="lg:hidden w-10 h-10 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-charcoal hover:bg-brand-lavender-soft"
+                    id="mobileMenuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined text-[22px]">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div class="hidden lg:hidden border-t border-brand-border bg-white px-6 py-4 space-y-2" id="mobileMenu">
+            <a class="block py-2 text-sm font-bold text-brand-charcoal hover:text-brand-coral" href="#home"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#about"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">About</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#videos"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Featured Videos</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#performances"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Performances</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#gallery"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Gallery</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#team"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Team</a>
+            <a class="block py-2 text-sm font-bold text-brand-muted hover:text-brand-charcoal" href="#journey"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Musical Journey</a>
+            <a class="block py-2 text-sm font-bold text-brand-coral" href="#contact"
+                onclick="document.getElementById('mobileMenu').classList.add('hidden')">Book a Performance →</a>
+        </div>
+    </header>
+    <!-- 3. HERO SECTION ("Music First") -->
+    <section class="relative overflow-hidden pt-10 pb-20 lg:py-24" id="home">
+        <!-- Colorful Background Aura Glows -->
+        <div
+            class="pointer-events-none absolute -top-24 left-1/4 w-96 h-96 rounded-full bg-brand-coral/15 blur-3xl -z-10">
+        </div>
+        <div
+            class="pointer-events-none absolute top-1/3 -right-20 w-[480px] h-[480px] rounded-full bg-brand-lavender/20 blur-3xl -z-10">
+        </div>
+        <div
+            class="pointer-events-none absolute -bottom-10 left-10 w-80 h-80 rounded-full bg-brand-sky/15 blur-3xl -z-10">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <!-- Left Column: Music First Headline & Player -->
+                <div class="lg:col-span-7 flex flex-col items-start z-10">
+                    <!-- Pill Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-6">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-coral animate-pulse"></span>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-charcoal">PIANIST ·
+                            MUSICIAN · PERFORMER</span>
+                        <span class="material-symbols-outlined text-brand-lavender text-[16px]">graphic_eq</span>
+                    </div>
+                    <!-- Bold Warm Editorial Headline -->
+                    <h1
+                        class="font-display font-extrabold text-4xl sm:text-6xl lg:text-[68px] leading-[1.05] tracking-tight text-brand-charcoal mb-4">
+                        Feel Every <span class="text-brand-coral relative inline-block">Note.
+                            <svg class="absolute -bottom-2 left-0 w-full" fill="none" height="8" viewbox="0 0 160 8">
+                                <path d="M2 6C50 1.5 110 1.5 158 6" stroke="#FBBF24" stroke-linecap="round"
+                                    stroke-width="4"></path>
+                            </svg>
+                        </span><br />
+                        <span class="font-serif italic font-normal text-brand-lavender">Music that speaks</span><br />
+                        when words fall silent.
+                    </h1>
+                    <!-- Description -->
+                    <p class="font-sans text-base sm:text-lg text-brand-muted max-w-xl mb-8 leading-relaxed">
+                        Explore my performances, discover my musical journey, and experience the vibrant acoustic
+                        moments that make every classical melody and modern composition special.
+                    </p>
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 mb-8 w-full sm:w-auto">
+                        <a class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-brand-coral hover:bg-brand-coral-dark text-white font-bold text-sm uppercase tracking-wider shadow-xl shadow-brand-coral/30 hover:-translate-y-0.5 transition-all duration-200"
+                            href="#videos">
+                            <span class="material-symbols-outlined text-[20px]"
+                                style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                            <span>Watch My Performances</span>
+                        </a>
+                        <a class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-brand-sky-soft text-brand-charcoal border-2 border-brand-sky font-bold text-sm uppercase tracking-wider shadow-sm hover:-translate-y-0.5 transition-all duration-200"
+                            href="#performances">
+                            <span class="material-symbols-outlined text-[20px] text-brand-sky">music_note</span>
+                            <span>Explore My Music</span>
+                        </a>
+                    </div>
+                    <!-- Mini Audio-Waveform Bar Player ("Now Playing") -->
+                    <div
+                        class="w-full max-w-lg p-4 rounded-2xl bg-white border border-brand-border shadow-md flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-3.5">
+                            <button aria-label="Toggle preview"
+                                class="w-11 h-11 rounded-full bg-brand-lavender text-white flex items-center justify-center hover:scale-105 transition-transform shrink-0 shadow-md shadow-brand-lavender/30"
+                                onclick="toggleAudioPreview(this)">
+                                <span class="material-symbols-outlined text-[22px]" id="heroPlayIcon"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </button>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="badge-pill bg-brand-yellow-soft text-brand-charcoal text-[10px] py-0.5 px-2 font-bold">Now
+                                        Previewing</span>
+                                    <span class="text-xs text-brand-muted font-medium">432Hz Master Audio</span>
+                                </div>
+                                <p class="font-bold text-sm text-brand-charcoal tracking-tight mt-0.5">Debussy · Clair
+                                    de Lune (Live Session)</p>
+                            </div>
+                        </div>
+                        <!-- Animated EQ Bars -->
+                        <div class="flex items-end gap-1 h-7 px-2">
+                            <span class="w-1.5 bg-brand-coral rounded-full animate-eq-1"></span>
+                            <span class="w-1.5 bg-brand-lavender rounded-full animate-eq-2"></span>
+                            <span class="w-1.5 bg-brand-sky rounded-full animate-eq-3"></span>
+                            <span class="w-1.5 bg-brand-yellow rounded-full animate-eq-4"></span>
+                            <span class="w-1.5 bg-brand-coral rounded-full animate-eq-5"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Expressive Performing Photography with Layered Accents -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-[430px]">
+                        <!-- Sunny Yellow Decorative Offset Backdrop -->
+                        <div
+                            class="absolute -top-3 -right-3 w-full h-full rounded-[2.5rem] bg-brand-yellow/80 -z-10 rotate-2">
+                        </div>
+                        <!-- Sky Blue Decorative Accent -->
+                        <div
+                            class="absolute -bottom-3 -left-3 w-full h-full rounded-[2.5rem] bg-brand-sky/40 -z-10 -rotate-2">
+                        </div>
+                        <!-- Main Dynamic Performance Frame -->
+                        <div
+                            class="relative rounded-[2.5rem] overflow-hidden bg-brand-charcoal shadow-2xl border-4 border-white">
+                            <img alt="Prarthana Mehta performing passionately on a Steinway grand piano in a sunlit acoustic recital hall"
+                                class="w-full h-[520px] object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7YchIfkvNkBQ2E09NsriS-UG9JG-Wna0zLSO8f4hKnSvJjkJlv6nXXwqEfUN9nE_XyAcQC0jBP3RMznYhxZwuCVFteHd1AyG2srD-x31iKPCkVR4ZGgdemFBeLxNoKFQAj29AY7hc5_iGrKqrff2QL-ZBD10bJfplTMmUywEqusVPBXa29ny43W5mwfPfbZJ85Jsbl3EhZmzXQqFvbbsE7N1EyGB2IFTJE89OdSHwUTEFUp1KxnRd" />
+                            <!-- Subtle Gradient Shade -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent">
+                            </div>
+                            <!-- Overlapping Soft Lavender Floating Card -->
+                            <div
+                                class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-xl border border-white flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 rounded-xl bg-brand-lavender text-white flex items-center justify-center font-bold text-lg">
+                                        <span class="material-symbols-outlined text-[20px]">equalizer</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="text-[10px] font-extrabold uppercase tracking-wider text-brand-lavender">Acoustic
+                                            Live Master</span>
+                                        <p class="font-bold text-xs sm:text-sm text-brand-charcoal">Grande Salle Pierre
+                                            Boulez</p>
+                                    </div>
+                                </div>
+                                <span class="badge-pill bg-brand-coral/10 text-brand-coral text-[11px]">4K HDR</span>
+                            </div>
+                        </div>
+                        <!-- Floating Sound Wave Badge -->
+                        <div
+                            class="absolute -top-5 -left-5 bg-white border border-brand-border px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                            <div class="w-8 h-8 rounded-full bg-brand-sky text-white flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-[10px] font-black uppercase tracking-wider text-brand-charcoal">Steinway
+                                    D-274</span>
+                                <span class="text-[11px] font-bold text-brand-sky">Concert Grand</span>
+                            </div>
+                        </div>
+                        <!-- Sunny Yellow Rhythm Accent -->
+                        <div
+                            class="absolute -bottom-4 -right-4 bg-brand-yellow text-brand-charcoal px-3 py-1.5 rounded-xl shadow-lg font-black text-xs uppercase tracking-wider flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-[16px]">celebration</span>
+                            <span>120+ Recitals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. FEATURED MUSIC VIDEOS ("Watch. Listen. Feel.") -->
+    <section class="py-20 bg-white border-y border-brand-border" id="videos">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-2">
+                        <span class="w-8 h-1 bg-brand-coral rounded-full"></span>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral">Performances on
+                            Camera</span>
+                    </div>
+                    <h2 class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight">
+                        Watch. Listen. Feel.
+                    </h2>
+                    <p class="text-brand-muted text-base sm:text-lg mt-2 font-medium">Every performance has a story to
+                        tell.</p>
+                </div>
+                <a class="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-brand-lavender hover:text-brand-charcoal group transition-colors"
+                    href="#contact">
+                    <span>Inquire for Live Screenings &amp; Tour</span>
+                    <span
+                        class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Large Featured Live Concert Video Card -->
+            <div
+                class="relative rounded-3xl overflow-hidden shadow-xl border border-brand-border bg-brand-charcoal mb-8 group">
+                <div class="relative h-[340px] sm:h-[460px] lg:h-[520px] w-full">
+                    <img alt="Rachmaninoff Piano Concerto No. 2 featured performance"
+                        class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7YchIfkvNkBQ2E09NsriS-UG9JG-Wna0zLSO8f4hKnSvJjkJlv6nXXwqEfUN9nE_XyAcQC0jBP3RMznYhxZwuCVFteHd1AyG2srD-x31iKPCkVR4ZGgdemFBeLxNoKFQAj29AY7hc5_iGrKqrff2QL-ZBD10bJfplTMmUywEqusVPBXa29ny43W5mwfPfbZJ85Jsbl3EhZmzXQqFvbbsE7N1EyGB2IFTJE89OdSHwUTEFUp1KxnRd" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/40 to-transparent">
+                    </div>
+                    <!-- Video Badges Top -->
+                    <div class="absolute top-6 left-6 flex flex-wrap items-center gap-2">
+                        <span class="badge-pill bg-brand-coral text-white shadow-md">Featured Live Concert</span>
+                        <span class="badge-pill bg-white/90 backdrop-blur-sm text-brand-charcoal">Philharmonie de
+                            Paris</span>
+                        <span class="badge-pill bg-brand-yellow text-brand-charcoal font-black flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">schedule</span> 14:38
+                        </span>
+                    </div>
+                    <!-- Glowing Play Trigger Button -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button aria-label="Play Featured Video"
+                            class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-brand-coral text-white flex items-center justify-center shadow-2xl shadow-brand-coral/60 hover:scale-110 hover:bg-brand-coral-dark transition-all duration-300 group/btn"
+                            onclick="openVideoPlayer('Rachmaninoff Piano Concerto No. 2 — Live at Philharmonie', 'Philharmonie de Paris, Grande Salle Pierre Boulez', '14:38', 'https://lh3.googleusercontent.com/aida-public/AB6AXuC7YchIfkvNkBQ2E09NsriS-UG9JG-Wna0zLSO8f4hKnSvJjkJlv6nXXwqEfUN9nE_XyAcQC0jBP3RMznYhxZwuCVFteHd1AyG2srD-x31iKPCkVR4ZGgdemFBeLxNoKFQAj29AY7hc5_iGrKqrff2QL-ZBD10bJfplTMmUywEqusVPBXa29ny43W5mwfPfbZJ85Jsbl3EhZmzXQqFvbbsE7N1EyGB2IFTJE89OdSHwUTEFUp1KxnRd')">
+                            <span class="absolute -inset-2 rounded-full bg-brand-coral/40 animate-ping"></span>
+                            <span class="material-symbols-outlined text-[40px] sm:text-[48px] ml-1"
+                                style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                        </button>
+                    </div>
+                    <!-- Bottom Card Details -->
+                    <div
+                        class="absolute bottom-6 left-6 right-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-widest text-brand-sky uppercase">Sergei Rachmaninoff
+                                · Orchestral Masterwork</span>
+                            <h3 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-1">Rachmaninoff
+                                Piano Concerto No. 2 — Live at Philharmonie</h3>
+                            <p class="text-sm text-gray-200 mt-1 max-w-2xl">Conducted with the Orchestre Symphonique de
+                                Paris. 24-bit direct audio recording from the soundboard.</p>
+                        </div>
+                        <button
+                            class="self-start md:self-end px-5 py-2.5 rounded-full bg-white text-brand-charcoal font-bold text-xs uppercase tracking-wider hover:bg-brand-yellow transition-colors shadow-lg"
+                            onclick="openVideoPlayer('Rachmaninoff Piano Concerto No. 2 — Live at Philharmonie', 'Philharmonie de Paris, Grande Salle Pierre Boulez', '14:38')">
+                            Watch Concert
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub-Grid of 3 Distinct Video Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Video 1: Studio Rehearsal (Lavender Tag) -->
+                <div
+                    class="bg-brand-offwhite rounded-2xl p-4 border border-brand-border shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-brand-charcoal">
+                            <img alt="Studio Rehearsal &amp; Improvisation"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0JTSSVDfux9tcjz90j9AjMWlN9PPEFbbNkWSBXI2Vk2wsHAty2RppbdLYofZp35vjok5IWVju0aEdJc7ee-RK0J_WkebfbLiaGNv3X8Ny7NmUfEHjbkL-X1i-8WwNWRRXW6ioM0kBlLemTnedkrT6Z6ZUxAhl6k1kcwvZXnRX7jhUF7Oh0qo8mn7bhKismtB0IMRGOtgHAL9rz7KhuewWFrM-Yvdrhz4E6FS5dZDOfxCisCH6Lhi1" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-lavender text-white">Lavender Session
+                            </div>
+                            <div class="absolute bottom-3 right-3 badge-pill bg-black/70 text-white text-[10px]">06:12
+                            </div>
+                            <button aria-label="Play Studio Rehearsal"
+                                class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 text-brand-lavender flex items-center justify-center group-hover:scale-110 transition-transform shadow-md"
+                                onclick="openVideoPlayer('Studio Rehearsal &amp; Improvisation', 'La Frette Studios, Paris', '06:12', 'https://lh3.googleusercontent.com/aida-public/AB6AXuB0JTSSVDfux9tcjz90j9AjMWlN9PPEFbbNkWSBXI2Vk2wsHAty2RppbdLYofZp35vjok5IWVju0aEdJc7ee-RK0J_WkebfbLiaGNv3X8Ny7NmUfEHjbkL-X1i-8WwNWRRXW6ioM0kBlLemTnedkrT6Z6ZUxAhl6k1kcwvZXnRX7jhUF7Oh0qo8mn7bhKismtB0IMRGOtgHAL9rz7KhuewWFrM-Yvdrhz4E6FS5dZDOfxCisCH6Lhi1')">
+                                <span class="material-symbols-outlined text-[24px] ml-0.5"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </button>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-lavender">Original
+                            Work</span>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal mt-1 mb-2">Studio Rehearsal &amp;
+                            Improvisation</h4>
+                        <p class="text-xs text-brand-muted line-clamp-2">Raw acoustic tape session experimenting with
+                            felt damping, vintage microphones, and spontaneous cadenzas.</p>
+                    </div>
+                    <div
+                        class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-muted">
+                        <span class="font-medium">La Frette Studios</span>
+                        <span class="text-brand-lavender font-bold">Analog Master</span>
+                    </div>
+                </div>
+                <!-- Video 2: Chopin Nocturne (Coral Tag) -->
+                <div
+                    class="bg-brand-offwhite rounded-2xl p-4 border border-brand-border shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-brand-charcoal">
+                            <img alt="Chopin Nocturne in C# Minor"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD2INmkCp1dBk4K86vRJuNoBW39yiAkMNuJlGchLOpWn8D8_20pkx5bNaCwlGiZK_y8LRECF2mjTokKL3ManVPy3kipV1jTimTMv38KohTjRmw-ntVy7FLkI6O9CeMYMqAvjtNh_KgdV_ZXlZHVS7dHcRGrngOJFHVWJ8acB-5vUwoqnaTv8xjelfNFYAXNQSJn_wABDQYHxHqdIq2lHTfwT5jXUGls76xtzsZDBlcaT8g3g7zGSfA" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-coral text-white">Coral Recital</div>
+                            <div class="absolute bottom-3 right-3 badge-pill bg-black/70 text-white text-[10px]">05:44
+                            </div>
+                            <button aria-label="Play Chopin Nocturne"
+                                class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 text-brand-coral flex items-center justify-center group-hover:scale-110 transition-transform shadow-md"
+                                onclick="openVideoPlayer('Chopin Nocturne in C# Minor', 'Salle Gaveau, Paris', '05:44', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBD2INmkCp1dBk4K86vRJuNoBW39yiAkMNuJlGchLOpWn8D8_20pkx5bNaCwlGiZK_y8LRECF2mjTokKL3ManVPy3kipV1jTimTMv38KohTjRmw-ntVy7FLkI6O9CeMYMqAvjtNh_KgdV_ZXlZHVS7dHcRGrngOJFHVWJ8acB-5vUwoqnaTv8xjelfNFYAXNQSJn_wABDQYHxHqdIq2lHTfwT5jXUGls76xtzsZDBlcaT8g3g7zGSfA')">
+                                <span class="material-symbols-outlined text-[24px] ml-0.5"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </button>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-coral">Frédéric Chopin</span>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal mt-1 mb-2">Chopin Nocturne in C#
+                            Minor</h4>
+                        <p class="text-xs text-brand-muted line-clamp-2">An evocative, candle-lit evening performance
+                            recorded live at historic Salle Gaveau in Paris.</p>
+                    </div>
+                    <div
+                        class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-muted">
+                        <span class="font-medium">Salle Gaveau, Paris</span>
+                        <span class="text-brand-coral font-bold">4K Recital</span>
+                    </div>
+                </div>
+                <!-- Video 3: Contemporary Acoustic Duo (Sky Blue Tag) -->
+                <div
+                    class="bg-brand-offwhite rounded-2xl p-4 border border-brand-border shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                    <div>
+                        <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-brand-charcoal">
+                            <img alt="Contemporary Acoustic Duo Session"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8qX2bBUNMaRIWa0NkPS3XUr33JiFG_rrV4KO_nJT_bN_jwBj9gY3kZPltyoUJgMbDn1oSajSd28zuyFajc8Fi9T7SOKEbyheh-Ilr_DBcBTshMRbkZigBTOiBQmYgCx6LvG53b9b3HESEs3SdY42kpwtlQ2ZdotNmPw0anpWTkTp6zNOD6_Hyw41IH8z2sQ3V-m-YhOY0QvkwYUfbEyZT3E2-BD0jomfDdjhSPzuGpCTbo9RnYldr" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-sky text-white">Sky Blue Duo</div>
+                            <div class="absolute bottom-3 right-3 badge-pill bg-black/70 text-white text-[10px]">08:19
+                            </div>
+                            <button aria-label="Play Contemporary Duo"
+                                class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 text-brand-sky flex items-center justify-center group-hover:scale-110 transition-transform shadow-md"
+                                onclick="openVideoPlayer('Contemporary Acoustic Duo Session', 'Royal Albert Hall, London', '08:19', 'https://lh3.googleusercontent.com/aida-public/AB6AXuC8qX2bBUNMaRIWa0NkPS3XUr33JiFG_rrV4KO_nJT_bN_jwBj9gY3kZPltyoUJgMbDn1oSajSd28zuyFajc8Fi9T7SOKEbyheh-Ilr_DBcBTshMRbkZigBTOiBQmYgCx6LvG53b9b3HESEs3SdY42kpwtlQ2ZdotNmPw0anpWTkTp6zNOD6_Hyw41IH8z2sQ3V-m-YhOY0QvkwYUfbEyZT3E2-BD0jomfDdjhSPzuGpCTbo9RnYldr')">
+                                <span class="material-symbols-outlined text-[24px] ml-0.5"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </button>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-sky">Crossover Project</span>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal mt-1 mb-2">Contemporary Acoustic
+                            Duo Session</h4>
+                        <p class="text-xs text-brand-muted line-clamp-2">Piano and cello dialogues blending minimalist
+                            patterns, ambient modular loops, and emotional warmth.</p>
+                    </div>
+                    <div
+                        class="pt-4 mt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-muted">
+                        <span class="font-medium">Royal Albert Hall</span>
+                        <span class="text-brand-sky font-bold">BBC Radio 3 Broadcast</span>
+                    </div>
+                </div>
+            </div>
+            <!-- View All Link -->
+            <div class="text-center mt-12">
+                <a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-brand-charcoal text-white font-bold text-xs uppercase tracking-wider hover:bg-brand-coral transition-colors shadow-md group"
+                    href="#contact">
+                    <span>View All 24+ Concert Videos</span>
+                    <span
+                        class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 5. ABOUT THE ARTIST ("More Than Just Music.") -->
+    <section class="py-24 bg-gradient-to-b from-brand-lavender-soft/60 to-brand-sky-soft/40 relative overflow-hidden"
+        id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left: Candid Practicing/Composing Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative w-full max-w-md mx-auto">
+                        <!-- Colorful Musical Staff Graphic Ornament -->
+                        <div class="absolute -top-6 -left-6 w-32 h-32 rounded-3xl bg-brand-yellow/30 -z-10 rotate-6">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -right-6 w-32 h-32 rounded-3xl bg-brand-coral/20 -z-10 -rotate-6">
+                        </div>
+                        <div class="rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-white relative">
+                            <img alt="Prarthana Mehta practicing and composing"
+                                class="w-full h-[500px] object-cover object-top"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiTgSaTKdBI9meZ_cKrg5WrLYx1pbOzhtiqLSsw1zKdYt9yRu9Rf9fpZHqrSWvf99sde2KoQSDc4cfAB5FcCMp9pJlWUinlho6Qm-OSDlSchjLulpha5bM7OODPu4l7Cevz3z6KMKaH7lsMRqmH0WxK1b-Lq2AP4QQfjEDHoYfEELdeYP3EsOtezi8N_mQvjFaCZJDToNw4vfBgK4eVUVA1O81aWW38s1BPdWkghklr7cQhINISDq_" />
+                            <!-- Badge Overlay -->
+                            <div
+                                class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-brand-border">
+                                <div
+                                    class="flex items-center gap-2 text-brand-coral font-bold text-xs uppercase tracking-wider mb-1">
+                                    <span class="material-symbols-outlined text-[16px]">edit_note</span>
+                                    <span>Currently Composing</span>
+                                </div>
+                                <p class="text-xs text-brand-charcoal font-bold">New Solo Piano Album ‘Solitude &amp;
+                                    Light’ (2025)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Story & Interactive Tabs -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 mb-3">
+                        <span class="w-8 h-1 bg-brand-lavender rounded-full"></span>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-lavender">About
+                            Prarthana Mehta</span>
+                    </div>
+                    <h2
+                        class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight mb-4 leading-tight">
+                        More Than Just Music.
+                    </h2>
+                    <!-- Quote Block -->
+                    <div class="p-6 rounded-2xl bg-white border-l-4 border-brand-coral shadow-sm mb-6">
+                        <p class="font-serif italic text-lg sm:text-xl text-brand-charcoal leading-relaxed">
+                            “For me, music is a language of its own. Through the piano, I express emotions, tell
+                            stories, and create moments that stay with people long after the final note.”
+                        </p>
+                        <span class="block mt-2 text-xs font-bold uppercase tracking-wider text-brand-coral">— Prarthana
+                            Mehta</span>
+                    </div>
+                    <!-- Interactive Tabs Switcher -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <button
+                            class="about-tab-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-charcoal text-white transition-all shadow-sm"
+                            id="btn-tab-bio" onclick="switchAboutTab('tab-bio')">
+                            Conservatory &amp; Roots
+                        </button>
+                        <button
+                            class="about-tab-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-muted hover:text-brand-charcoal transition-all shadow-sm"
+                            id="btn-tab-influences" onclick="switchAboutTab('tab-influences')">
+                            Influences (Ravel to Richter)
+                        </button>
+                        <button
+                            class="about-tab-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-brand-muted hover:text-brand-charcoal transition-all shadow-sm"
+                            id="btn-tab-philosophy" onclick="switchAboutTab('tab-philosophy')">
+                            Artistic Philosophy
+                        </button>
+                    </div>
+                    <!-- Tab Content 1: Bio -->
+                    <div class="about-tab-pane space-y-3 text-sm text-brand-charcoal/80 leading-relaxed bg-white/70 p-6 rounded-2xl border border-brand-border"
+                        id="tab-bio">
+                        <p>
+                            Trained at the <strong class="text-brand-charcoal">Conservatoire National Supérieur de
+                                Musique de Paris</strong> and mentored by classical masters across Vienna, Élise
+                            developed an acoustic voice characterized by luminous clarity, harmonic poetry, and
+                            boundless emotional sincerity.
+                        </p>
+                        <p>
+                            From solo concerts at the Philharmonie de Paris to the intimate halls of London and Tokyo,
+                            she connects generations of listeners to the visceral power of eighty-eight keys.
+                        </p>
+                    </div>
+                    <!-- Tab Content 2: Influences -->
+                    <div class="about-tab-pane hidden space-y-3 text-sm text-brand-charcoal/80 leading-relaxed bg-white/70 p-6 rounded-2xl border border-brand-border"
+                        id="tab-influences">
+                        <p>
+                            Her sonic landscape bridges French Impressionists like <strong
+                                class="text-brand-charcoal">Maurice Ravel and Claude Debussy</strong> with the
+                            contemporary introspective worlds of <strong class="text-brand-charcoal">Max Richter,
+                                Ryuichi Sakamoto, and Philip Glass</strong>.
+                        </p>
+                        <p>
+                            The result is a dynamic fusion of pristine polyphonic control and ambient cinematic freedom
+                            that breathes new life into the concert stage.
+                        </p>
+                    </div>
+                    <!-- Tab Content 3: Philosophy -->
+                    <div class="about-tab-pane hidden space-y-3 text-sm text-brand-charcoal/80 leading-relaxed bg-white/70 p-6 rounded-2xl border border-brand-border"
+                        id="tab-philosophy">
+                        <p>
+                            Rather than viewing classical performance as a formal museum exhibit, Élise approaches every
+                            concert as a shared living sanctuary where audience and performer breathe together in real
+                            time.
+                        </p>
+                        <p>
+                            She advocates for democratic access to acoustic music, open-door masterclasses for young
+                            artists, and acoustic recordings made without synthetic compression.
+                        </p>
+                    </div>
+                    <!-- CTA Row -->
+                    <div class="mt-8 flex flex-wrap items-center gap-4">
+                        <a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-brand-lavender hover:bg-brand-lavender/90 text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-brand-lavender/30 transition-all"
+                            href="#contact">
+                            <span>Get to Know Me</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                        <a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-brand-charcoal hover:bg-brand-yellow-soft border border-brand-border font-bold text-xs uppercase tracking-wider transition-all"
+                            href="#journey">
+                            <span class="material-symbols-outlined text-brand-yellow text-[18px]">timeline</span>
+                            <span>View Full Journey</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6. PERFORMANCE HIGHLIGHTS ("On Stage & Beyond") -->
+    <section class="py-20 bg-white" id="performances">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-2">
+                        <span class="w-8 h-1 bg-brand-sky rounded-full"></span>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-sky">Tour &amp;
+                            Appearances</span>
+                    </div>
+                    <h2 class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight">
+                        On Stage &amp; Beyond
+                    </h2>
+                    <p class="text-brand-muted text-base sm:text-lg mt-2 font-medium">Selected upcoming dates,
+                        orchestral collaborations, and intimate recitals.</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex items-center gap-2">
+                    <span class="badge-pill bg-brand-coral/10 text-brand-coral">2025 Tour</span>
+                    <span class="badge-pill bg-brand-lavender-soft text-brand-lavender">Global Booking Open</span>
+                </div>
+            </div>
+            <!-- Grid of Performance Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="rounded-3xl border border-brand-border bg-brand-offwhite p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="badge-pill bg-brand-coral text-white">Live Performance</span>
+                            <span class="text-xs font-extrabold text-brand-coral">MAY 18, 2025</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-brand-charcoal group-hover:text-brand-coral transition-colors">
+                            Philharmonie de Paris Recital
+                        </h3>
+                        <p class="text-xs font-semibold text-brand-muted mt-1">Grande Salle Pierre Boulez · Paris,
+                            France</p>
+                        <p class="text-sm text-brand-muted mt-3">Solo program featuring Debussy’s Suite Bergamasque,
+                            Chopin Ballades, and original compositions from ‘Resonance’.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-brand-charcoal">Steinway D Concert Grand</span>
+                        <a class="inline-flex items-center gap-1 text-xs font-extrabold uppercase tracking-wider text-brand-coral hover:underline"
+                            href="#contact">
+                            <span>Book Seats</span>
+                            <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="rounded-3xl border border-brand-border bg-brand-offwhite p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="badge-pill bg-brand-lavender text-white">Philharmonic Recital</span>
+                            <span class="text-xs font-extrabold text-brand-lavender">JUN 04, 2025</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-brand-charcoal group-hover:text-brand-lavender transition-colors">
+                            Carnegie Hall Solo Debut Series
+                        </h3>
+                        <p class="text-xs font-semibold text-brand-muted mt-1">Stern Auditorium / Perelman Stage · New
+                            York, NY</p>
+                        <p class="text-sm text-brand-muted mt-3">Rachmaninoff, Scriabin, and contemporary acoustic
+                            minimalism in one of the world's most resonant auditoriums.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-brand-charcoal">Stern Auditorium</span>
+                        <a class="inline-flex items-center gap-1 text-xs font-extrabold uppercase tracking-wider text-brand-lavender hover:underline"
+                            href="#contact">
+                            <span>Reserve Tickets</span>
+                            <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="rounded-3xl border border-brand-border bg-brand-offwhite p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="badge-pill bg-brand-sky text-white">Collaboration</span>
+                            <span class="text-xs font-extrabold text-brand-sky">JUL 22, 2025</span>
+                        </div>
+                        <h3
+                            class="font-display font-bold text-xl text-brand-charcoal group-hover:text-brand-sky transition-colors">
+                            London Contemporary Proms
+                        </h3>
+                        <p class="text-xs font-semibold text-brand-muted mt-1">Royal Albert Hall · London, UK</p>
+                        <p class="text-sm text-brand-muted mt-3">Chamber orchestra dialogues with cellist Sofia
+                            Al-Mansoor, premiering acoustic suites broadcast live on BBC Radio 3.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-brand-border flex items-center justify-between">
+                        <span class="text-xs font-bold text-brand-charcoal">BBC Live Broadcast</span>
+                        <a class="inline-flex items-center gap-1 text-xs font-extrabold uppercase tracking-wider text-brand-sky hover:underline"
+                            href="#contact">
+                            <span>View Program</span>
+                            <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick Booking Strip -->
+            <div
+                class="mt-10 p-6 rounded-3xl bg-gradient-to-r from-brand-coral/10 via-brand-lavender/10 to-brand-sky/10 border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-brand-coral text-white flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-[24px]">piano</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-base text-brand-charcoal">Looking to curate a concert, festival
+                            program, or guest soloist appearance?</h4>
+                        <p class="text-xs text-brand-muted">Private salon recitals, masterclasses, and festival dates
+                            available worldwide.</p>
+                    </div>
+                </div>
+                <a class="shrink-0 px-6 py-3 rounded-full bg-brand-coral hover:bg-brand-coral-dark text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md"
+                    href="#contact">
+                    Inquire Availability
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 7. PHOTOGRAPHY GALLERY ("Life Between the Notes") -->
+    <section class="py-20 bg-brand-offwhite border-t border-brand-border" id="gallery">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 mb-2">
+                    <span class="w-6 h-1 bg-brand-coral rounded-full"></span>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral">Visual
+                        Archives</span>
+                    <span class="w-6 h-1 bg-brand-lavender rounded-full"></span>
+                </div>
+                <h2 class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight">
+                    Life Between the Notes
+                </h2>
+                <p class="text-brand-muted text-base mt-2">A visual mosaic of rehearsal reveries, hands on keys, score
+                    annotations, and stages around the globe.</p>
+            </div>
+            <!-- Colorful Masonry Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6">
+                <!-- Photo 1: Wide Rehearsal -->
+                <div class="lg:col-span-7 group relative h-80 rounded-3xl overflow-hidden cursor-pointer shadow-md border-2 border-brand-coral/40"
+                    onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuDpEe53UoF4fYLCpirmVGQr9tJa0M2CE_l1OUemL4aHfvrQmXX-UecSCiYfzwRDYTcbAnT8TRP4NA2RPHhSSqU9UrXgAH-xT0K2JYg7wWrx4NGv_-ODLzW5I-0bEQdkT6vtNw2AAy9ztGvSZvZ6n3jSKHKqomXbH6jkSS6qOPg8h7IGlnxxWxt3MVWGTrCvEEyHM1H3iU0NExXZneDM7jEryAKelXb28LZ4rque334ImmlpZQFQTnL7', 'Solo Grand Piano Rehearsals in Sunlit Hall', 'Philharmonie de Paris')">
+                    <img alt="Solo rehearsal in concert hall"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpEe53UoF4fYLCpirmVGQr9tJa0M2CE_l1OUemL4aHfvrQmXX-UecSCiYfzwRDYTcbAnT8TRP4NA2RPHhSSqU9UrXgAH-xT0K2JYg7wWrx4NGv_-ODLzW5I-0bEQdkT6vtNw2AAy9ztGvSZvZ6n3jSKHKqomXbH6jkSS6qOPg8h7IGlnxxWxt3MVWGTrCvEEyHM1H3iU0NExXZneDM7jEryAKelXb28LZ4rque334ImmlpZQFQTnL7" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 justify-between text-white">
+                        <div>
+                            <span class="badge-pill bg-brand-coral text-white text-[10px] mb-1">Morning Rehearsal</span>
+                            <p class="font-bold text-base">Grand Hall Acoustic Warmup</p>
+                        </div>
+                        <span class="material-symbols-outlined text-[24px]">fullscreen</span>
+                    </div>
+                    <div class="absolute top-3 left-3 badge-pill bg-white/90 text-brand-charcoal text-[10px]">Paris
+                    </div>
+                </div>
+                <!-- Photo 2: Hands on Keys -->
+                <div class="lg:col-span-5 group relative h-80 rounded-3xl overflow-hidden cursor-pointer shadow-md border-2 border-brand-lavender/40"
+                    onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCtZVC_g92kOQs7YSp1PT_c2Y6hTWYv5RdleNc8jf33SWI6gpsVnQ4jFYiWHmYMX_xtKNGYlVjjgv_rqwa17PfTnvvKItx5CRpEf7GGEL-6zmlvakA1JR75T22mSU6Jo2RKy8qdPi6y-GBgMdhRbGrecMUfCgx-GeWtrVvTFAHoZYTxBeOlQP51CF2_e_J2_wlRoTEpM896UnRyQebda-jhr5PuWDMXBKm6A9XcvXP5XYrpx9Z3Me_D', 'Hands Across Ivory &amp; Ebony Keys', 'London Studio')">
+                    <img alt="Artistic close up of pianist hands on keys"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtZVC_g92kOQs7YSp1PT_c2Y6hTWYv5RdleNc8jf33SWI6gpsVnQ4jFYiWHmYMX_xtKNGYlVjjgv_rqwa17PfTnvvKItx5CRpEf7GGEL-6zmlvakA1JR75T22mSU6Jo2RKy8qdPi6y-GBgMdhRbGrecMUfCgx-GeWtrVvTFAHoZYTxBeOlQP51CF2_e_J2_wlRoTEpM896UnRyQebda-jhr5PuWDMXBKm6A9XcvXP5XYrpx9Z3Me_D" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 justify-between text-white">
+                        <div>
+                            <span class="badge-pill bg-brand-lavender text-white text-[10px] mb-1">Ivory &amp;
+                                Ebony</span>
+                            <p class="font-bold text-base">Touch, Articulation &amp; Timbre</p>
+                        </div>
+                        <span class="material-symbols-outlined text-[24px]">fullscreen</span>
+                    </div>
+                    <div class="absolute top-3 left-3 badge-pill bg-white/90 text-brand-charcoal text-[10px]">Studio
+                        Macro</div>
+                </div>
+                <!-- Photo 3: Stage Bow -->
+                <div class="lg:col-span-4 group relative h-72 rounded-3xl overflow-hidden cursor-pointer shadow-md border-2 border-brand-sky/40"
+                    onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBXOGG6t7j-akyXRQVrL1q0V7okH-AFNuuiCLVlNIJr_CdJu8ZS_rY0a47gpeHsxMHNigmCa0pWjRDWbMW2pY-9A7tsswLGkN_ScJJmglQvA53-FcPKE6jq8G_9lIJwfQcYRVXh7vKeo1fvs6nd_997Cl0xATE_hIchg2ohIdbUUZvqF5cVfHHg1U1ZeQfIeao6uvzYOrPG3MNBLDRXL_2KK_pM5RyZ8n5zR_1nprJDXhDjy20eq5uL', 'Stage Bow After Standing Ovation', 'Salle Gaveau')">
+                    <img alt="Pianist taking a graceful stage bow"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXOGG6t7j-akyXRQVrL1q0V7okH-AFNuuiCLVlNIJr_CdJu8ZS_rY0a47gpeHsxMHNigmCa0pWjRDWbMW2pY-9A7tsswLGkN_ScJJmglQvA53-FcPKE6jq8G_9lIJwfQcYRVXh7vKeo1fvs6nd_997Cl0xATE_hIchg2ohIdbUUZvqF5cVfHHg1U1ZeQfIeao6uvzYOrPG3MNBLDRXL_2KK_pM5RyZ8n5zR_1nprJDXhDjy20eq5uL" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 justify-between text-white">
+                        <div>
+                            <p class="font-bold text-sm">After the Cadence</p>
+                            <span class="text-xs text-gray-300">Salle Gaveau Ovation</span>
+                        </div>
+                        <span class="material-symbols-outlined text-[20px]">fullscreen</span>
+                    </div>
+                    <div class="absolute top-3 left-3 badge-pill bg-brand-sky text-white text-[10px]">Live Stage</div>
+                </div>
+                <!-- Photo 4: Backstage Sheet Music Annotations -->
+                <div class="lg:col-span-4 group relative h-72 rounded-3xl overflow-hidden cursor-pointer shadow-md border-2 border-brand-yellow/50"
+                    onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBwr_8HvbcaJ-m7DfGkZxDLR4KNqswoy8xlXlMTXXiDl4Ifa94EMmYDq39kbABvT8S7qe4jfVu9ImPyjvn0GRigae9eiSc9aY2Iyz3qfi_kbaLSIisR285J_5zHPIXOCsU5VTjjC8RooTrAjmv3m9MDSWzndtXfp3fYo_E7Yrt6O2aQXG8diHuwJ9Q8CupQXIeAPKUvNIMU9F6hXbSzW37bScDmLtgnQ64Gtsl8ZRuXLtiv0ZdihEk0', 'Pencil Annotations &amp; Score Revisions', 'Backstage Dressing Room')">
+                    <img alt="Sheet music score covered in handwritten pencil markings"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwr_8HvbcaJ-m7DfGkZxDLR4KNqswoy8xlXlMTXXiDl4Ifa94EMmYDq39kbABvT8S7qe4jfVu9ImPyjvn0GRigae9eiSc9aY2Iyz3qfi_kbaLSIisR285J_5zHPIXOCsU5VTjjC8RooTrAjmv3m9MDSWzndtXfp3fYo_E7Yrt6O2aQXG8diHuwJ9Q8CupQXIeAPKUvNIMU9F6hXbSzW37bScDmLtgnQ64Gtsl8ZRuXLtiv0ZdihEk0" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 justify-between text-white">
+                        <div>
+                            <p class="font-bold text-sm">Pencil Markings</p>
+                            <span class="text-xs text-gray-300">Dynamics &amp; Rubato</span>
+                        </div>
+                        <span class="material-symbols-outlined text-[20px]">fullscreen</span>
+                    </div>
+                    <div
+                        class="absolute top-3 left-3 badge-pill bg-brand-yellow text-brand-charcoal font-black text-[10px]">
+                        The Scores</div>
+                </div>
+                <!-- Photo 5: Recording Booth with Ribbon Mics -->
+                <div class="lg:col-span-4 group relative h-72 rounded-3xl overflow-hidden cursor-pointer shadow-md border-2 border-brand-coral/40"
+                    onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuAcClUGQSeX5YWskniOOWfgl_SXN5sJBr_NWql5OV91YLztB4SQKlrHdOIBJW1watwZZRwAZkGmD_m31OKHVtt1XrP58NuBeC-yDFD9oqX4G8gCb7dukVvTd31SoZgaNaaFWYAlz-3eixT7AUWnlLIOqdEEpu75Sw3Gr1zTfYnjsNBsEKNwwwFFTnWovMf6TCofadzOTUhEUfUA83OBgWS2Yqt5hMGVHPcqzIWjoWuyPTKssEW1EgT5', 'Ribbon Microphones &amp; Pure Acoustics', 'Abbey Road Studios, London')">
+                    <img alt="Vintage ribbon microphones suspended over concert piano"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcClUGQSeX5YWskniOOWfgl_SXN5sJBr_NWql5OV91YLztB4SQKlrHdOIBJW1watwZZRwAZkGmD_m31OKHVtt1XrP58NuBeC-yDFD9oqX4G8gCb7dukVvTd31SoZgaNaaFWYAlz-3eixT7AUWnlLIOqdEEpu75Sw3Gr1zTfYnjsNBsEKNwwwFFTnWovMf6TCofadzOTUhEUfUA83OBgWS2Yqt5hMGVHPcqzIWjoWuyPTKssEW1EgT5" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 justify-between text-white">
+                        <div>
+                            <p class="font-bold text-sm">Resonance &amp; Analog Mics</p>
+                            <span class="text-xs text-gray-300">London Recording Session</span>
+                        </div>
+                        <span class="material-symbols-outlined text-[20px]">fullscreen</span>
+                    </div>
+                    <div class="absolute top-3 left-3 badge-pill bg-brand-coral text-white text-[10px]">Studio Gear
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 8. MEET THE TEAM ("Good Music Is a Team Effort.") -->
+    <section class="py-20 bg-white" id="team">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 mb-2">
+                    <span class="w-6 h-1 bg-brand-coral rounded-full"></span>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral">Artistic
+                        Collaborators</span>
+                    <span class="w-6 h-1 bg-brand-sky rounded-full"></span>
+                </div>
+                <h2 class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight">
+                    Good Music Is a Team Effort.
+                </h2>
+                <p class="text-brand-muted text-base mt-2">Meet the creative people who bring every performance to life.
+                </p>
+            </div>
+            <!-- 5 Clean Portrait Cards with Colorful Role Tags -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Team 1: Prarthana Mehta -->
+                <div
+                    class="bg-brand-offwhite rounded-3xl p-5 border border-brand-border shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-56 rounded-2xl overflow-hidden mb-4 bg-brand-charcoal relative">
+                            <img alt="Prarthana Mehta"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiTgSaTKdBI9meZ_cKrg5WrLYx1pbOzhtiqLSsw1zKdYt9yRu9Rf9fpZHqrSWvf99sde2KoQSDc4cfAB5FcCMp9pJlWUinlho6Qm-OSDlSchjLulpha5bM7OODPu4l7Cevz3z6KMKaH7lsMRqmH0WxK1b-Lq2AP4QQfjEDHoYfEELdeYP3EsOtezi8N_mQvjFaCZJDToNw4vfBgK4eVUVA1O81aWW38s1BPdWkghklr7cQhINISDq_" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-coral text-white text-[10px]">Lead
+                                Artist</div>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal">Prarthana Mehta</h4>
+                        <span class="text-xs font-extrabold text-brand-coral block mb-2">Concert Pianist &amp;
+                            Composer</span>
+                        <p class="text-xs text-brand-muted leading-relaxed">Soloist and artistic visionary directing all
+                            recital programs and melodic narratives.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-lavender font-bold">
+                        <span>@elise.piano</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </div>
+                </div>
+                <!-- Team 2: Marc Fontaine -->
+                <div
+                    class="bg-brand-offwhite rounded-3xl p-5 border border-brand-border shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-56 rounded-2xl overflow-hidden mb-4 bg-brand-charcoal relative">
+                            <img alt="Marc Fontaine"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhkwGhB7jFhw-UsU7A94IRieizScIWXCl_VO7zEoPtSmx1WxqsiqRvMZ9yIDPT_BzsKYbE9IP0b6JJg83xnqaAHIr5OBhyJkPKjnsQBdha3FDli0ElnYmpgiu40PTV0317qGBHumUszMjtviXQC2yd2FkfGvzAtmNzr-2Io7D49b68k8eYUnjPJdtpz1sJGoA1mBiPyaUsBQrZaxEze9be8Xtbni2445ogn4Uv-7fQmBnDPkyxYv5z" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-lavender text-white text-[10px]">
+                                Conductor</div>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal">Marc Fontaine</h4>
+                        <span class="text-xs font-extrabold text-brand-lavender block mb-2">Music Director</span>
+                        <p class="text-xs text-brand-muted leading-relaxed">Directs orchestral concerto collaborations
+                            and symphonic string arrangements.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-lavender font-bold">
+                        <span>@m.fontaine</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </div>
+                </div>
+                <!-- Team 3: Sofia Al-Mansoor -->
+                <div
+                    class="bg-brand-offwhite rounded-3xl p-5 border border-brand-border shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-56 rounded-2xl overflow-hidden mb-4 bg-brand-charcoal relative">
+                            <img alt="Sofia Al-Mansoor"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-OT8NcziiUBzBA255d5p_bjVDjP6cNIWHqpmZZYsGBLIP5YQlnLDXu90FYrA2Hr-hnLFj2T8VZsIz1aEx4RRrgzRZGJfLoLxmYvvHCe8RfU6D9AZ_AqdBZmrk4WZvOQTjy_FHJuSvmnPBbYOlde6zHrqkCygVXVA8TkgA-HaCjw9oRng_gGf8Unt-R3a3ujure-XpbQF994ACfjCSD16bLnLubiIoqi9XKYz8D678qrOTRwGKDBBe" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-sky text-white text-[10px]">Chamber
+                                Soloist</div>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal">Sofia Al-Mansoor</h4>
+                        <span class="text-xs font-extrabold text-brand-sky block mb-2">Collaborating Cellist</span>
+                        <p class="text-xs text-brand-muted leading-relaxed">Brings rich warmth and emotive low-end
+                            harmonies to acoustic duo performances.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-lavender font-bold">
+                        <span>@sofia.cello</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </div>
+                </div>
+                <!-- Team 4: Julian Vance -->
+                <div
+                    class="bg-brand-offwhite rounded-3xl p-5 border border-brand-border shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-56 rounded-2xl overflow-hidden mb-4 bg-brand-charcoal relative">
+                            <img alt="Julian Vance"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB02lhVDPXpXAkrVfichnK5rUVbbNS4VguxiqNlEUIsfamn4jVCw31sNN50cZ1m-N5mAoeCSy-FT9367jr7HuwnPWHAo-SHSZsv_3LALE8Vv5YBmi7nU_DN2EuEsf5m8rMf1m_vXMMc1gMibG0GIT2MQOMfFbRm-zN9FP4PqPmpL505MDMYry4d0oAZV8rDzW3h2eRo-5e18XmlrdchPrhxBOG9KYXaovoA4vLHYGmuuag6RgHkwoa" />
+                            <div
+                                class="absolute top-3 left-3 badge-pill bg-brand-yellow text-brand-charcoal font-black text-[10px]">
+                                Sound Master</div>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal">Julian Vance</h4>
+                        <span class="text-xs font-extrabold text-brand-yellow block mb-2">Master Sound Engineer</span>
+                        <p class="text-xs text-brand-muted leading-relaxed">Captures natural room resonance and
+                            microscopic keystroke dynamics for vinyl &amp; Dolby Atmos.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-lavender font-bold">
+                        <span>@vance.sound</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </div>
+                </div>
+                <!-- Team 5: Hélène Mercier -->
+                <div
+                    class="bg-brand-offwhite rounded-3xl p-5 border border-brand-border shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-56 rounded-2xl overflow-hidden mb-4 bg-brand-charcoal relative">
+                            <img alt="Hélène Mercier"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0L2hK3BMzNwNF-e1UdVkjMPQ0LzD-Yk1NSJKd34xBJtz8S6J-pnGcQxYWGZgW-8D_YTdcjAvea75c2avN2pFGq6HoHnFLA1z1BcXTA_sTrUNBM1-zoxcWDGZrf83ptzLXMhZsKlV02UxLDiiR4otQAhDmEUm2ikF4Y6lhtyblPPTJTzmVIjm-RQRzd1IDDsKuQHPt4R_c6D-ZZ-2O_NaNXSTlLdjlDLEVsYksNxyEOBkbIaPfU_El" />
+                            <div class="absolute top-3 left-3 badge-pill bg-brand-coral text-white text-[10px]">Creative
+                                Director</div>
+                        </div>
+                        <h4 class="font-display font-bold text-lg text-brand-charcoal">Hélène Mercier</h4>
+                        <span class="text-xs font-extrabold text-brand-coral block mb-2">Stage &amp; Visual
+                            Director</span>
+                        <p class="text-xs text-brand-muted leading-relaxed">Designs the dramatic concert hall lighting
+                            architecture and album visual identity.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-lavender font-bold">
+                        <span>@mercier.studio</span>
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 9. MUSICAL JOURNEY ("Every Artist Has a Story.") -->
+    <section class="py-24 bg-gradient-to-b from-brand-lavender-soft/40 to-brand-offwhite border-t border-brand-border"
+        id="journey">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-2">
+                        <span class="w-8 h-1 bg-brand-coral rounded-full"></span>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral">Chronology of
+                            Artistry</span>
+                    </div>
+                    <h2 class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight">
+                        Every Artist Has a Story.
+                    </h2>
+                    <p class="text-brand-muted text-base sm:text-lg mt-2 font-medium">From childhood scales to
+                        international concert stages.</p>
+                </div>
+                <span class="badge-pill bg-white border border-brand-border text-brand-charcoal shadow-sm mt-4 md:mt-0">
+                    <span class="material-symbols-outlined text-brand-coral text-[16px]">route</span>
+                    <span>5 Landmark Milestones</span>
+                </span>
+            </div>
+            <!-- Stepped Horizontal Timeline with Colorful Progress Markers -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <!-- Step 1 -->
+                <div
+                    class="bg-white rounded-3xl p-6 border-2 border-brand-coral/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-brand-coral/10 text-brand-coral flex items-center justify-center font-display font-extrabold text-lg mb-4 group-hover:bg-brand-coral group-hover:text-white transition-colors">
+                            01
+                        </div>
+                        <span class="badge-pill bg-brand-coral/10 text-brand-coral text-[10px] mb-2">Age 6 · First
+                            Scales</span>
+                        <h4 class="font-display font-bold text-base text-brand-charcoal mt-1 mb-2">Classical Roots &amp;
+                            Conservatoire</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Earliest training in Paris, devouring Bach
+                            inventions and Mozart sonatas before formal CNSM admission.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border text-[11px] font-bold text-brand-coral flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">piano</span>
+                        <span>Paris Conservatoire</span>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div
+                    class="bg-white rounded-3xl p-6 border-2 border-brand-lavender/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-brand-lavender/10 text-brand-lavender flex items-center justify-center font-display font-extrabold text-lg mb-4 group-hover:bg-brand-lavender group-hover:text-white transition-colors">
+                            02
+                        </div>
+                        <span class="badge-pill bg-brand-lavender-soft text-brand-lavender text-[10px] mb-2">2017 ·
+                            Paris Debut</span>
+                        <h4 class="font-display font-bold text-base text-brand-charcoal mt-1 mb-2">First Public Solo
+                            Recital</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Théâtre des Champs-Élysées breakthrough
+                            performing Ravel's Gaspard de la Nuit to unanimous critical acclaim.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border text-[11px] font-bold text-brand-lavender flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">theater_comedy</span>
+                        <span>Champs-Élysées</span>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div
+                    class="bg-white rounded-3xl p-6 border-2 border-brand-sky/30 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-brand-sky/10 text-brand-sky flex items-center justify-center font-display font-extrabold text-lg mb-4 group-hover:bg-brand-sky group-hover:text-white transition-colors">
+                            03
+                        </div>
+                        <span class="badge-pill bg-brand-sky-soft text-brand-sky text-[10px] mb-2">2019-2021 ·
+                            Tour</span>
+                        <h4 class="font-display font-bold text-base text-brand-charcoal mt-1 mb-2">European Tour &amp;
+                            Orchestral Debut</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">18-city European recital tour followed by
+                            concerto debuts across Vienna, London, and Berlin.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border text-[11px] font-bold text-brand-sky flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">flight_takeoff</span>
+                        <span>18 European Cities</span>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div
+                    class="bg-white rounded-3xl p-6 border-2 border-brand-yellow/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center font-display font-extrabold text-lg mb-4 group-hover:bg-brand-yellow group-hover:text-brand-charcoal transition-colors">
+                            04
+                        </div>
+                        <span class="badge-pill bg-brand-yellow-soft text-brand-charcoal text-[10px] mb-2">2023 ·
+                            Barbican Series</span>
+                        <h4 class="font-display font-bold text-base text-brand-charcoal mt-1 mb-2">Contemporary
+                            Crossover Projects</h4>
+                        <p class="text-xs text-brand-muted leading-relaxed">Fusing classical masterworks with ambient
+                            synthesizers, tape loops, and chamber cello duos.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-brand-border text-[11px] font-bold text-brand-charcoal flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">graphic_eq</span>
+                        <span>Grammy Nomination</span>
+                    </div>
+                </div>
+                <!-- Step 5 -->
+                <div
+                    class="bg-gradient-to-br from-brand-coral to-brand-lavender text-white rounded-3xl p-6 shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center font-display font-extrabold text-lg mb-4">
+                            05
+                        </div>
+                        <span class="badge-pill bg-white text-brand-coral text-[10px] mb-2">2025 · Global</span>
+                        <h4 class="font-display font-bold text-base text-white mt-1 mb-2">New Album &amp; World Premiere
+                            Tour</h4>
+                        <p class="text-xs text-white/90 leading-relaxed">Releasing ‘Solitude &amp; Light’ worldwide
+                            accompanied by grand solo recitals in Paris, New York, and Tokyo.</p>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-white/20 text-[11px] font-bold text-white flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">album</span>
+                        <span>World Premiere 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 10. BOOKING & CONTACT ("Let's Make Some Music Together.") -->
+    <section class="py-24 bg-white relative" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Container Tinted in Vibrant Coral & Lavender -->
+            <div
+                class="rounded-[2.5rem] bg-gradient-to-br from-brand-coral/10 via-brand-lavender-soft to-brand-sky-soft p-8 sm:p-12 lg:p-16 border-2 border-brand-border shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Contact Left Column -->
+                    <div class="lg:col-span-5 flex flex-col justify-between">
+                        <div>
+                            <div class="inline-flex items-center gap-2 mb-3">
+                                <span class="w-8 h-1 bg-brand-coral rounded-full"></span>
+                                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral">Booking
+                                    &amp; Collaborations</span>
+                            </div>
+                            <h2
+                                class="font-display font-black text-3xl sm:text-5xl text-brand-charcoal tracking-tight mb-4 leading-tight">
+                                Let’s Make Some <br />
+                                <span class="text-brand-coral">Music Together.</span>
+                            </h2>
+                            <p class="text-brand-muted text-base leading-relaxed mb-8">
+                                Interested in a performance, orchestral collaboration, festival recital, or special
+                                scoring project? Let’s talk.
+                            </p>
+                            <!-- Quick Booking Channels -->
+                            <div class="space-y-4">
+                                <div
+                                    class="p-4 rounded-2xl bg-white border border-brand-border flex items-center gap-4 shadow-sm">
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-brand-coral text-white flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[22px]">mail</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="text-[11px] font-extrabold uppercase tracking-wider text-brand-coral">Direct
+                                            Artist Inquiries</span>
+                                        <p class="text-sm font-bold text-brand-charcoal">booking@eliselaurent.com</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="p-4 rounded-2xl bg-white border border-brand-border flex items-center gap-4 shadow-sm">
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-brand-lavender text-white flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[22px]">business_center</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="text-[11px] font-extrabold uppercase tracking-wider text-brand-lavender">Worldwide
+                                            Management</span>
+                                        <p class="text-sm font-bold text-brand-charcoal">Le Cercle Musical · Paris &amp;
+                                            New York</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="p-4 rounded-2xl bg-white border border-brand-border flex items-center gap-4 shadow-sm">
+                                    <div
+                                        class="w-11 h-11 rounded-xl bg-brand-sky text-white flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined text-[22px]">piano</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="text-[11px] font-extrabold uppercase tracking-wider text-brand-sky">Steinway
+                                            Concert Artist</span>
+                                        <p class="text-sm font-bold text-brand-charcoal">Steinway &amp; Sons Global
+                                            Roster</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Note / Acoustic Requirement Quote -->
+                        <div
+                            class="mt-8 pt-4 border-t border-brand-border/60 text-xs font-semibold text-brand-muted flex items-center gap-2">
+                            <span class="material-symbols-outlined text-brand-coral text-[18px]">verified</span>
+                            <span>Available worldwide for Steinway D/B concert acoustic engagements.</span>
+                        </div>
+                    </div>
+                    <!-- Contact Right Column: Accessible Form -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white p-8 sm:p-10 rounded-3xl border border-brand-border shadow-xl">
+                            <h3 class="font-display font-extrabold text-2xl text-brand-charcoal mb-2">Performance &amp;
+                                Booking Request</h3>
+                            <p class="text-xs text-brand-muted mb-6">Complete this brief transmission form and our
+                                management will reply within 24 hours.</p>
+                            <form class="space-y-4" id="contactBookingForm" onsubmit="handleFormSubmission(event)">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label
+                                            class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                            for="clientName">Your Name *</label>
+                                        <input
+                                            class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal placeholder:text-gray-400 text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                            id="clientName" placeholder="e.g. Claire de Valois" required=""
+                                            type="text" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                            for="clientEmail">Email Address *</label>
+                                        <input
+                                            class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal placeholder:text-gray-400 text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                            id="clientEmail" placeholder="claire@symphonyhall.org" required=""
+                                            type="email" />
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label
+                                            class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                            for="eventType">Event Type *</label>
+                                        <select
+                                            class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                            id="eventType">
+                                            <option value="solo">Solo Piano Recital</option>
+                                            <option value="orchestral">Orchestral Soloist / Concerto</option>
+                                            <option value="chamber">Chamber Music Collaboration</option>
+                                            <option value="festival">Music Festival Appearance</option>
+                                            <option value="scoring">Original Film / Media Score</option>
+                                            <option value="private">Private Salon Performance</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                            for="eventDate">Preferred Date / Season</label>
+                                        <input
+                                            class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal placeholder:text-gray-400 text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                            id="eventDate" placeholder="e.g. Autumn 2025 / May 20" type="text" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                        for="eventVenue">Venue &amp; City</label>
+                                    <input
+                                        class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal placeholder:text-gray-400 text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                        id="eventVenue" placeholder="e.g. Boston Symphony Hall or Tonhalle Zurich"
+                                        type="text" />
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-xs font-extrabold uppercase tracking-wider text-brand-charcoal mb-1"
+                                        for="eventMessage">Project Details &amp; Repertoire Vision *</label>
+                                    <textarea
+                                        class="w-full px-4 py-3 rounded-xl border border-brand-border text-brand-charcoal placeholder:text-gray-400 text-sm focus:border-brand-coral focus:ring-brand-coral"
+                                        id="eventMessage"
+                                        placeholder="Tell us about the concert program, piano available, acoustic environment, and audience capacity..."
+                                        required="" rows="4"></textarea>
+                                </div>
+                                <button
+                                    class="w-full py-4 rounded-full bg-brand-coral hover:bg-brand-coral-dark text-white font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-brand-coral/30 hover:shadow-brand-coral/50 transition-all flex items-center justify-center gap-2"
+                                    id="submitFormBtn" type="submit">
+                                    <span id="submitFormText">Send Booking Inquiry</span>
+                                    <span class="material-symbols-outlined text-[18px]">send</span>
+                                </button>
+                                <div class="hidden p-4 rounded-xl bg-brand-lavender-soft text-brand-charcoal text-xs font-medium border border-brand-lavender/30"
+                                    id="formSuccessAlert">
+                                    <strong class="text-brand-lavender">Thank you!</strong> Your inquiry has been sent
+                                    to Prarthana Mehta’s management team. We will respond with repertoire details and
+                                    proposed dates within 24 hours.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 11. CREATIVE FOOTER -->
+    <footer class="bg-brand-charcoal text-white pt-16 pb-12 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <!-- Brand Wordmark & Animated Soundwave -->
+                <div class="md:col-span-5 flex flex-col items-start">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-coral text-white flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[22px]">music_note</span>
+                        </div>
+                        <span class="font-display font-extrabold text-2xl tracking-tight text-white">Prarthana
+                            Mehta</span>
+                    </div>
+                    <!-- Subtle Animated Soundwave Graphic -->
+                    <div class="flex items-center gap-1.5 mb-4">
+                        <span class="w-1 h-3 bg-brand-coral rounded-full animate-pulse"></span>
+                        <span class="w-1 h-6 bg-brand-lavender rounded-full animate-pulse"
+                            style="animation-delay: 100ms"></span>
+                        <span class="w-1 h-4 bg-brand-sky rounded-full animate-pulse"
+                            style="animation-delay: 200ms"></span>
+                        <span class="w-1 h-7 bg-brand-yellow rounded-full animate-pulse"
+                            style="animation-delay: 300ms"></span>
+                        <span class="w-1 h-5 bg-brand-coral rounded-full animate-pulse"
+                            style="animation-delay: 150ms"></span>
+                        <span class="w-1 h-8 bg-brand-lavender rounded-full animate-pulse"
+                            style="animation-delay: 250ms"></span>
+                        <span class="w-1 h-3 bg-brand-sky rounded-full animate-pulse"
+                            style="animation-delay: 350ms"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-gray-400 ml-2">Music That
+                            Speaks</span>
+                    </div>
+                    <p class="text-xs text-gray-400 max-w-sm leading-relaxed mb-6">
+                        Concert pianist, recording artist, and contemporary composer crafting vibrant acoustic
+                        masterworks and soul-stirring live performances worldwide.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex items-center gap-3">
+                        <a aria-label="Spotify"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-coral text-white flex items-center justify-center transition-colors text-xs font-bold"
+                            href="https://spotify.com" rel="noopener noreferrer" target="_blank">
+                            Sp
+                        </a>
+                        <a aria-label="Apple Music"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-lavender text-white flex items-center justify-center transition-colors text-xs font-bold"
+                            href="https://apple.com" rel="noopener noreferrer" target="_blank">
+                            Ap
+                        </a>
+                        <a aria-label="YouTube"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-coral text-white flex items-center justify-center transition-colors text-xs font-bold"
+                            href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+                            Yt
+                        </a>
+                        <a aria-label="Instagram"
+                            class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-sky text-white flex items-center justify-center transition-colors text-xs font-bold"
+                            href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+                            Ig
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Nav Links -->
+                <div class="md:col-span-3">
+                    <h4 class="text-xs font-extrabold uppercase tracking-widest text-brand-yellow mb-4">Explore</h4>
+                    <ul class="space-y-2 text-xs font-bold text-gray-300">
+                        <li><a class="hover:text-brand-coral transition-colors" href="#home">Home &amp; Music Player</a>
+                        </li>
+                        <li><a class="hover:text-brand-coral transition-colors" href="#about">About &amp; Philosophy</a>
+                        </li>
+                        <li><a class="hover:text-brand-coral transition-colors" href="#videos">Concert Videos</a></li>
+                        <li><a class="hover:text-brand-coral transition-colors" href="#performances">Tour Dates &amp;
+                                Recitals</a></li>
+                        <li><a class="hover:text-brand-coral transition-colors" href="#gallery">Life Between the
+                                Notes</a></li>
+                        <li><a class="hover:text-brand-coral transition-colors" href="#journey">Milestones &amp;
+                                Journey</a></li>
+                    </ul>
+                </div>
+                <!-- Direct Representation -->
+                <div class="md:col-span-4 bg-white/5 p-6 rounded-3xl border border-white/10">
+                    <span class="badge-pill bg-brand-coral text-white text-[10px] mb-2">Management Dispatch</span>
+                    <h4 class="font-display font-bold text-base text-white mb-2">Worldwide Booking &amp; Press</h4>
+                    <p class="text-xs text-gray-300 mb-4">For concert bookings, orchestral appearances, and interview
+                        inquiries:</p>
+                    <p class="text-xs text-brand-sky font-bold">booking@eliselaurent.com</p>
+                    <a class="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-brand-yellow hover:underline"
+                        href="#contact">
+                        <span>Send Direct Message</span>
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Copyright & Legal -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+                <p>© 2025 Prarthana Mehta. All rights reserved. SACEM Member &amp; Steinway Concert Artist.</p>
+                <div class="flex items-center gap-4">
+                    <a class="hover:text-white transition-colors" href="#privacy">Privacy Policy</a>
+                    <span>·</span>
+                    <a class="hover:text-white transition-colors" href="#press">Electronic Press Kit</a>
+                    <span>·</span>
+                    <a class="hover:text-white transition-colors" href="#accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- INTERACTIVE LIGHTBOX MODAL (Gallery) -->
+    <div class="fixed inset-0 z-50 hidden bg-brand-charcoal/90 backdrop-blur-md flex items-center justify-center p-4"
+        id="galleryLightbox">
+        <div
+            class="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl p-4 sm:p-6 border border-brand-border">
+            <button aria-label="Close Lightbox"
+                class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-brand-offwhite text-brand-charcoal flex items-center justify-center hover:bg-brand-coral hover:text-white transition-colors"
+                onclick="closeLightbox()">
+                <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+            <div
+                class="w-full h-[60vh] rounded-2xl overflow-hidden bg-brand-charcoal flex items-center justify-center mb-4">
+                <img alt="Gallery Preview" class="w-full h-full object-contain" id="lightboxImage" src="" />
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-2">
+                <div>
+                    <h4 class="font-display font-bold text-xl text-brand-charcoal" id="lightboxTitle">Visual Archive
+                    </h4>
+                    <p class="text-xs font-semibold text-brand-muted" id="lightboxSubtitle">Studio and stage moments</p>
+                </div>
+                <button
+                    class="self-start sm:self-auto px-5 py-2 rounded-full bg-brand-charcoal text-white font-bold text-xs uppercase tracking-wider hover:bg-brand-coral transition-colors"
+                    onclick="closeLightbox()">
+                    Close Lightbox
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- INTERACTIVE VIDEO PLAYER PREVIEW MODAL -->
+    <div class="fixed inset-0 z-50 hidden bg-brand-charcoal/95 backdrop-blur-lg flex items-center justify-center p-4"
+        id="videoModalPlayer">
+        <div
+            class="relative w-full max-w-4xl bg-brand-charcoal rounded-3xl overflow-hidden shadow-2xl border border-white/10 text-white">
+            <!-- Modal Header -->
+            <div class="p-4 sm:p-6 flex items-center justify-between border-b border-white/10 bg-black/40">
+                <div class="flex items-center gap-3">
+                    <div class="w-3 h-3 rounded-full bg-brand-coral animate-ping"></div>
+                    <div>
+                        <h4 class="font-display font-bold text-lg sm:text-xl text-white" id="videoModalTitle">
+                            Performance Video</h4>
+                        <p class="text-xs text-brand-sky font-semibold" id="videoModalVenue">Live Concert Recording</p>
+                    </div>
+                </div>
+                <button aria-label="Close Video Modal"
+                    class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-coral text-white flex items-center justify-center transition-colors"
+                    onclick="closeVideoPlayer()">
+                    <span class="material-symbols-outlined text-[20px]">close</span>
+                </button>
+            </div>
+            <!-- Player Canvas Visual Mockup -->
+            <div class="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
+                <img alt="Video Player Poster" class="absolute inset-0 w-full h-full object-cover opacity-50"
+                    id="videoModalThumbnail"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7YchIfkvNkBQ2E09NsriS-UG9JG-Wna0zLSO8f4hKnSvJjkJlv6nXXwqEfUN9nE_XyAcQC0jBP3RMznYhxZwuCVFteHd1AyG2srD-x31iKPCkVR4ZGgdemFBeLxNoKFQAj29AY7hc5_iGrKqrff2QL-ZBD10bJfplTMmUywEqusVPBXa29ny43W5mwfPfbZJ85Jsbl3EhZmzXQqFvbbsE7N1EyGB2IFTJE89OdSHwUTEFUp1KxnRd" />
+                <!-- Center Equalizer / Play Animation -->
+                <div class="relative z-10 flex flex-col items-center gap-4 text-center px-4">
+                    <div
+                        class="w-20 h-20 rounded-full bg-brand-coral text-white flex items-center justify-center shadow-2xl shadow-brand-coral/70 animate-bounce">
+                        <span class="material-symbols-outlined text-[44px]"
+                            style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+                    </div>
+                    <div>
+                        <h5 class="font-display font-bold text-xl text-white">Lossless Master Audio Stream Active</h5>
+                        <p class="text-xs text-gray-300 mt-1 max-w-md">24-bit / 96kHz High Definition Direct Feed from
+                            Stage Microphones.</p>
+                    </div>
+                    <!-- Playback Progress Bar -->
+                    <div class="w-full max-w-md flex items-center gap-3 mt-2">
+                        <span class="text-xs font-mono text-gray-400">02:14</span>
+                        <div class="flex-1 h-2 bg-white/20 rounded-full overflow-hidden">
+                            <div class="w-2/5 h-full bg-gradient-to-r from-brand-coral to-brand-lavender"></div>
+                        </div>
+                        <span class="text-xs font-mono text-gray-400" id="videoModalDuration">14:38</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Footer -->
+            <div
+                class="p-4 sm:p-5 bg-black/60 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
+                <div class="flex items-center gap-2">
+                    <span class="badge-pill bg-white/10 text-white text-[10px]">4K UHD 60fps</span>
+                    <span class="badge-pill bg-brand-lavender/30 text-brand-lavender text-[10px]">Dolby Atmos</span>
+                    <span class="badge-pill bg-brand-yellow/30 text-brand-yellow text-[10px]">Steinway Spirio
+                        High-Res</span>
+                </div>
+                <button
+                    class="px-6 py-2 rounded-full bg-brand-coral hover:bg-brand-coral-dark text-white font-bold text-xs uppercase tracking-wider transition-colors"
+                    onclick="closeVideoPlayer()">
+                    Return to Portfolio
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Tab Switching for About Section
+        function switchAboutTab(targetId) {
+            document.querySelectorAll('.about-tab-pane').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.about-tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-brand-charcoal', 'text-white');
+                btn.classList.add('bg-white', 'text-brand-muted');
+            });
+
+            const pane = document.getElementById(targetId);
+            if (pane) pane.classList.remove('hidden');
+
+            const btn = document.getElementById('btn-' + targetId);
+            if (btn) {
+                btn.classList.add('active', 'bg-brand-charcoal', 'text-white');
+                btn.classList.remove('bg-white', 'text-brand-muted');
+            }
+        }
+
+        // Lightbox Controls
+        function openLightbox(src, title, subtitle) {
+            const box = document.getElementById('galleryLightbox');
+            document.getElementById('lightboxImage').src = src;
+            document.getElementById('lightboxTitle').textContent = title;
+            document.getElementById('lightboxSubtitle').textContent = subtitle;
+            box.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('galleryLightbox').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Video Player Modal Controls
+        function openVideoPlayer(title, venue, duration, thumbnail) {
+            const modal = document.getElementById('videoModalPlayer');
+            document.getElementById('videoModalTitle').textContent = title;
+            document.getElementById('videoModalVenue').textContent = venue;
+            document.getElementById('videoModalDuration').textContent = duration;
+            if (thumbnail) {
+                document.getElementById('videoModalThumbnail').src = thumbnail;
+            }
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoPlayer() {
+            document.getElementById('videoModalPlayer').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Audio Preview Toggle Mock
+        let isPlayingAudio = false;
+        function toggleAudioPreview(btn) {
+            isPlayingAudio = !isPlayingAudio;
+            const icon = document.getElementById('heroPlayIcon');
+            if (isPlayingAudio) {
+                icon.textContent = 'pause';
+                btn.classList.replace('bg-brand-lavender', 'bg-brand-coral');
+            } else {
+                icon.textContent = 'play_arrow';
+                btn.classList.replace('bg-brand-coral', 'bg-brand-lavender');
+            }
+        }
+
+        // Booking Form Submission Handler
+        function handleFormSubmission(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitFormBtn');
+            const text = document.getElementById('submitFormText');
+            const alert = document.getElementById('formSuccessAlert');
+
+            text.textContent = 'Transmitting Booking Request...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                text.textContent = 'Inquiry Sent Successfully!';
+                alert.classList.remove('hidden');
+                document.getElementById('contactBookingForm').reset();
+                btn.disabled = false;
+            }, 700);
+        }
+
+        // Escape Key Support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeVideoPlayer();
+            }
+        });
+    </script>
+</body>
+
+</html>
